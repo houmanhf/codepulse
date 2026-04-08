@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+*.egg
+.ruff_cache/
+
+# Node
+node_modules/
+frontend/dist/
+.vite/
+*.tsbuildinfo
+
+# Environment
+.env
+
+# Docker
+pgdata/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+test.db
+test-results/
+
+# Project dev notes (not needed in repo)
+SESSION_NOTES.md
+TODO.md

@@ -1,0 +1,26 @@
+repos:
+  - repo: local
+    hooks:
+      - id: backend-lint
+        name: ruff (backend)
+        entry: bash -c 'cd backend && poetry run ruff check .'
+        language: system
+        pass_filenames: false
+
+      - id: backend-test
+        name: pytest (backend)
+        entry: bash -c 'cd backend && poetry run pytest tests/ -q'
+        language: system
+        pass_filenames: false
+
+      - id: frontend-lint
+        name: eslint (frontend)
+        entry: bash -c 'cd frontend && npm run lint'
+        language: system
+        pass_filenames: false
+
+      - id: frontend-test
+        name: vitest (frontend)
+        entry: bash -c 'cd frontend && npm test'
+        language: system
+        pass_filenames: false
